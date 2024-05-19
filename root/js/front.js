@@ -20,3 +20,10 @@ document.addEventListener("DOMContentLoaded", function () {
         offset: 50,
     });
 });
+
+document.getElementById('language-selector').addEventListener('change', function() {
+    var selectedValue = this.value;
+    if (selectedValue) {
+        window.location.href = selectedValue;
+    }
+});

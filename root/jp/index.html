@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>マイページ | 高 敏</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="all,follow">
+    <!-- Google fonts-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,800&amp;display=swap">
+    <!-- theme stylesheet-->
+    <link rel="stylesheet" href="../css/style.default.css" id="theme-stylesheet">
+    <!-- Custom stylesheet - for your changes-->
+    <link rel="stylesheet" href="../css/custom.css">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="../img/favicon.png">
+  </head>
+  <body class="scrollspy-example" data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="0" tabindex="0">
+    <!-- navbar-->
+    <header class="header">
+      <nav class="navbar navbar-light navbar-expand-lg fixed-top" id="navbar">
+        <div class="container"><a class="navbar-brand" href="index.html"><img src="../img/logo.svg" alt="" width="45"></a>
+          <button class="navbar-toggler navbar-toggler-end" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i class="fas fa-bars"></i></button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a class="nav-link text-uppercase active" href="#hero">現在のページ <span class="sr-only">(current)</span></a></li>
+              <li class="nav-item"><a class="nav-link text-uppercase" href="#about">自己紹介</a></li>
+              <li class="nav-item"><a class="nav-link text-uppercase" href="#expertise">専門分野</a></li>
+              <li class="nav-item"><a class="nav-link text-uppercase" href="#education">学歴</a></li>
+              <li class="nav-item"><a class="nav-link text-uppercase" href="#experience">経験</a></li>
+              <li class="nav-item"><a class="nav-link text-uppercase" href="#contact">連絡先</a></li>
+              
+              <select id="language-selector">
+                <option value="../index.html">言語選択</option>
+                <option value="../en/index.html">English</option>
+                <!-- <option value="../zh/index.html">中文</option> -->
+                <option value="../jp/index.html" selected>日本語</option>
+              </select>
+                  
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Hero Section-->
+    <section class="hero bg-cover bg-center py-5" id="hero" style="background: url(../img/author3.JPG)">
+      <div class="container py-5 my-5 z-index-20 position-relative">
+        <div class="row py-lg-5 mt-5">
+          <div class="col-md-8 text-white img-text-down">
+            <h2 class="h4 text-primary fw-normal mb-0">こんにちは、</h2>
+            <h1 class="text-uppercase text-xl mb-0">私は<span class="text-primary">高</span>敏です</h1>
+            <h2 class="h4 fw-normal mb-5">バックエンドウェブ開発者</h2>
+            <p class="text-shadow">2011年に初めて日本に来ました。日本での勉強を終えた後、こちらで就職しました。過去9年間、ウェブ開発やビッグデータ開発、自動車ソフトウェアのプロジェクト管理など、さまざまな分野で働いてきました。また、AIやWeb3に関連する技術にも興味があり、これらの先進的な分野でスキルをさらに磨くことを目指しています。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About Section-->
+    <section class="py-5 bg-light" id="about">
+      <div class="container py-5">
+        <header class="mb-5">
+          <p class="fw-bold text-primary text-uppercase letter-spacing-3">イノベーティブな解決策</p>
+          <h2 class="h3 lined">個人プロジェクト</h2>
+        </header>
+        <br class="lead text-muted">技術スキルを向上させ、実践に活かすために、フロントエンドとバックエンドの両方を備えた財務管理システムと会員管理システムを構築しました。</p>
+        <p class="text-muted"> 要件定義にはSpring Boot 2.3.4、MySQL 5.7、Redis 5.0、AlibabaCloud（短いメッセージ、OSS、Nacos）およびVue3を使用しました。 </p>
+        <p class="text-muted mb-0" >尚融宝財務システム: <a href="https://gitee.com/max-g/shangrongbao">https://gitee.com/max-g/shangrongbao</a></p>
+        <p class="text-muted"> 要件定義にはSpring Boot2.3.4、Spring Security、Redis 5.0、Jwt、AlibabaCloud (short message, OSS,nacos)およびruoyi-Vueを使用しました。 </p>
+        <p class="text-muted mb-0" >美顔会員管理システム: <a href="https://github.com/Max-Gao/ruoyi-ui.git">https://github.com/Max-Gao/ruoyi-ui.git</a></p>
+        <br class="lead text-muted">HDFSをベースにしたローカルでのビッグデータ収集および処理システム、そしてプロファイル分析システムの構築も試みました。</br>
+        <p class="text-muted"> 要件定義にはHDFS、Zookeeper、Flume、Kafka、MySQL、Hive、Spark、DolphinScheduler、Redisを利用しました。</p>
+        <p class="text-muted mb-0" >ユーザープロファイル管理システム: <a href="https://github.com/Max-Gao/user-profile-manager.git">https://github.com/Max-Gao/user-profile-manager.git</a></p> 
+      </div>
+    </section>
+    <!-- Expertise Section        -->
+    <section class="py-5" id="expertise">
+      <div class="container py-5">
+        <header class="mb-5 pb-4">
+          <p class="fw-bold text-primary text-uppercase letter-spacing-3">幅広いIT分野の専門知識.</p>
+          <h2 class="text-uppercase lined">専門知識</h2>
+        </header>
+        <div class="row gy-5">
+          <div class="col-md-6">
+            <h3 class="h4"><span class="text-primary me-2">01</span>Web開発</h3>
+            <p class="text-muted text-sm ms-4 ps-3">JavaやC#を使用したシステムソフトウェアやモバイル開発プロジェクトの経験があります。また、Vue3やReactなどの人気のあるフロントエンドプロジェクトのアーキテクチャを理解しています。AlibabacloudやAWSの使用経験もあります。</p>
+          </div>
+          <div class="col-md-6">
+            <h3 class="h4"><span class="text-primary me-2">02</span>ビッグデータ開発</h3>
+            <p class="text-muted text-sm ms-4 ps-3">HDFSをベースにして、ローカルサーバーやクラウドサーバーのいずれかを使用してオフラインデータウェアハウスを構築することが可能です。また、SparkやFlinkなどのビッグデータ技術を使用したリアルタイム処理フレームワークに関する知識も持っています。</p>
+          </div>
+          <div class="col-md-6">
+            <h3 class="h4"><span class="text-primary me-2">03</span>車載ソフトウェアシステム</h3>
+            <p class="text-muted text-sm ms-4 ps-3">4つの部門にまたがる20人以上の開発者チームを管理し、新しい車載用マザーボード上にiAuto1.0システムを実装しました。ラジオ、USB、Carplay、Bluetoothなどの機能を実装し、これにより68万ドルの利益を上げました。</p>
+          </div>
+          <div class="col-md-6">
+            <h3 class="h4"><span class="text-primary me-2">04</span>ブロックチェーンと人工知能</h3>
+            <p class="text-muted text-sm ms-4 ps-3">2017年以来、ブロックチェーンの知識について学び、Web3の分散化を信じるようになりました。DAOに参加し、ブロックチェーンプロジェクトを構築しようとしています。また、AI時代の到来にも興奮しています。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Education Section-->
+    <section class="py-5 bg-light" id="education">
+      <div class="container py-5">
+        <header class="mb-5 pb-4">
+          <p class="fw-bold text-primary text-uppercase letter-spacing-3">知識の終身追求.</p>
+          <h2 class="text-uppercase lined">教育</h2>
+        </header>
+        <!--  Timeline -->
+        <ul class="timeline">
+              <!-- Timeline item-->
+              <li class="timeline-item ms-3 pb-4">
+                <div class="timeline-arrow"></div>
+                <div class="row gx-0 gy-4">
+                  <div class="col-lg-5">
+                    <p class="fw-bold mb-2 text-primary text-sm">2013年4月 - 2015年3月 </p>
+                    <h2 class="h5 mb-0 text-uppercase">電気工学</h2>
+                    <p class="text-sm mb-0">関東学院大学</p><span class="small text-muted">日本, 横浜</span>
+                  </div>
+                  <div class="col-lg-7">
+                    <p class="text-muted">日本の大学院時代の研究テーマは「画像情報技術」でした。研究を通じて、情報学における画像処理の知識と技術に深く入り込みました。私の論文プロジェクトでは、C言語、OpenCVデータベース、赤外線カメラを使用して、空間環境における屋内人体認識と追跡を行いました。</p>
+                  </div>
+                </div>
+              </li>
+              <!-- Timeline item-->
+              <li class="timeline-item ms-3 pb-4">
+                <div class="timeline-arrow"></div>
+                <div class="row gx-0 gy-4">
+                  <div class="col-lg-5">
+                    <p class="fw-bold mb-2 text-primary text-sm">2011年10月 - 2013年4月 </p>
+                    <h2 class="h5 mb-0 text-uppercase">日本語</h2>
+                    <p class="text-sm mb-0">東京ワールド日本語学校</p><span class="small text-muted">日本, 東京</span>
+                  </div>
+                  <div class="col-lg-7">
+                    <p class="text-muted">日本に初めて来た時、日本語を学び、学業を進め、日本での生活に慣れるために、日本語学校に通うことを選びました。その期間中、さまざまな国のクラスメートと出会い、基本的な日本語を学び、日本の多くの面白い場所を探検する機会を得ました。</p>
+                  </div>
+                </div>
+              </li>
+              <!-- Timeline item-->
+              <li class="timeline-item ms-3 pb-4">
+                <div class="timeline-arrow"></div>
+                <div class="row gx-0 gy-4">
+                  <div class="col-lg-5">
+                    <p class="fw-bold mb-2 text-primary text-sm">2007年9月 - 2011年7月 </p>
+                    <h2 class="h5 mb-0 text-uppercase">印刷工学/<br>コンピューターサイエンスとテクノロジー</h2>
+                    <p class="text-sm mb-0">内モンゴル工業大学</p><span class="small text-muted">中国, 呼和浩特</span>
+                  </div>
+                  <div class="col-lg-7">
+                    <p class="text-muted">コンピュータ技術が将来の発展方向であると感じ、大学時代にコンピュータ関連の科目を選択しました。その中には、コンピュータ原理、コンピュータネットワーク、Cプログラミング言語、データベースなどが含まれています。成功した論文審査を通じて、コンピュータ科学と技術の両方の学位を取得しました。さらに、大学時代には英語レベル6の試験に合格しました。</p>
+                  </div>
+                </div>
+              </li>
+        </ul>
+      </div>
+    </section>
+    <!-- Experience Section        -->
+    <section class="py-5" id="experience">
+      <div class="container py-5">
+        <header class="mb-5 pb-4">
+          <p class="fw-bold text-primary text-uppercase letter-spacing-3">日本におけるソフトウェア開発に精通しています。</p>
+          <h2 class="text-uppercase lined">経験</h2>
+        </header>
+        <!--  Timeline -->
+        <ul class="timeline">
+              <!-- Timeline item-->
+              <li class="timeline-item ms-3 pb-4">
+                <div class="timeline-arrow"></div>
+                <div class="row gx-0 gy-4">
+                  <div class="col-lg-5">
+                    <p class="fw-bold mb-2 text-primary text-sm">2023年8月 – 現在 </p>
+                    <h2 class="h5 mb-0 text-uppercase">株式会社MAIASOFT</h2>
+                    <p class="text-sm mb-0">システムエンジニア</p><span class="small text-muted">日本, 東京</span>
+                  </div>
+                  <div class="col-lg-7">
+                    <p class="text-muted">銀行のバックエンドシステムのページ修正を完了し、システムにバッチ機能を追加しました。基本設計書、詳細設計書の作成能力やコードレビューの実施能力を向上させました。</p>
+                  </div>
+                </div>
+              </li>
+              <!-- Timeline item-->
+              <li class="timeline-item ms-3 pb-4">
+                <div class="timeline-arrow"></div>
+                <div class="row gx-0 gy-4">
+                  <div class="col-lg-5">
+                    <p class="fw-bold mb-2 text-primary text-sm">2021年8月 - 2023年7月 </p>
+                    <h2 class="h5 mb-0 text-uppercase">上汽零束科技有限公司</h2>
+                    <p class="text-sm mb-0">チームリーダー</p><span class="small text-muted">中国, 上海</span>
+                  </div>
+                  <div class="col-lg-7">
+                    <p class="text-muted">セキュリティと安全に関連する車両運転指標システムを組織し、AlibabaCloudのビッグデータをベースにした車両運用セキュリティ指標のためのデータウェアハウスを構築しました。</p>
+                  </div>
+                </div>
+              </li>
+              <!-- Timeline item-->
+              <li class="timeline-item ms-3 pb-4">
+                <div class="timeline-arrow"></div>
+                <div class="row gx-0 gy-4">
+                  <div class="col-lg-5">
+                    <p class="fw-bold mb-2 text-primary text-sm">2017年9月 - 2021年7月 </p>
+                    <h2 class="h5 mb-0 text-uppercase">商泰軟件（上海）有限公司</h2>
+                    <p class="text-sm mb-0">チームリーダー</p><span class="small text-muted">中国, 上海</span>
+                  </div>
+                  <div class="col-lg-7">
+                    <p class="text-muted">チームリーダー（TL）として、車載ソフトウェアの基本的なアーキテクチャ設計を理解し、開発スケジュールを管理しました。バグが発生した際には、迅速にチームと共に対処し、顧客やベンダーとのコミュニケーションを管理しました。</p>
+                  </div>
+                </div>
+              </li>
+              <!-- Timeline item-->
+              <li class="timeline-item ms-3 pb-4">
+              <div class="timeline-arrow"></div>
+              <div class="row gx-0 gy-4">
+                <div class="col-lg-5">
+                  <p class="fw-bold mb-2 text-primary text-sm">2015年4月 - 2019年9月 </p>
+                  <h2 class="h5 mb-0 text-uppercase">株式会社 CAICA DIGITAL</h2>
+                  <p class="text-sm mb-0">システムエンジニア</p><span class="small text-muted">日本, 東京</span>
+                </div>
+                <div class="col-lg-7">
+                  <p class="text-muted">主に金融情報や交通画像システムのアプリケーションの開発、設計、テストに従事してきました。ソフトウェア開発の経験を積み重ね、ソフトウェア開発プロセスと作業環境についての理解を深めてきました。
+                  </p>
+                </div>
+              </div>
+            </li>
+        </ul>
+      </div>
+    </section>
+    <!-- Education Section        -->
+    <section class="bg-light py-5" id="contact">
+      <div class="container py-5">
+        <header class="mb-5 pb-4">
+          <p class="fw-bold text-primary text-uppercase letter-spacing-3">お気軽にご連絡ください。</p>
+          <h2 class="text-uppercase lined">連絡先</h2>
+        </header>
+        <div class="row gy-4">
+          <div class="col-lg-3 col-md-6"><a class="px-4 py-5 text-center contact-item shadow-sm reset-anchor d-block" href="#!"><i class="fas fa-map-marker-alt fa-2x mb-4"></i>
+              <h4 class="contact-item-title h5 text-uppercase">位置</h4>
+              <p class="text-sm mb-0">日本, 東京</p></a></div>
+          <div class="col-lg-3 col-md-6"><a class="px-4 py-5 text-center contact-item shadow-sm reset-anchor d-block" href="tel:534456886"><i class="fas fa-map-marker-alt fa-2x mb-4"></i>
+              <h4 class="contact-item-title h5 text-uppercase">携帯電話</h4>
+              <p class="text-sm mb-0">070-9168-0216</p></a></div>
+          <div class="col-lg-3 col-md-6"><a class="px-4 py-5 text-center contact-item shadow-sm reset-anchor d-block" href="https://github.com/Max-Gao"><i class="fas fa-map-marker-alt fa-2x mb-4"></i>
+              <h4 class="contact-item-title h5 text-uppercase">マイページ</h4>
+              <p class="text-sm mb-0">https://github.com/Max-Gao</p></a></div>
+          <div class="col-lg-3 col-md-6"><a class="px-4 py-5 text-center contact-item shadow-sm reset-anchor d-block" href="gaomin19880216@outlook.com"><i class="fas fa-map-marker-alt fa-2x mb-4"></i>
+              <h4 class="contact-item-title h5 text-uppercase">メール</h4>
+              <p class="text-sm mb-0">gaomin19880216@outlook.com</p></a></div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer-->
+    <footer class="pt-5">
+      <div class="container text-center py-5">
+        <div class="row px-4">
+          <div class="col-lg-7 mx-auto">
+            <h2 class="text-uppercase mb-0">高 敏</h2>
+            <h6 class="text-primary text-uppercase mb-0 letter-spacing-3">バックエンドウェブ開発者</h6>
+            <p class="text-muted my-4">現実に向き合い、勇気を持って何度も挑戦し続けることで、いつか理想の目標地点に到達することができるでしょう。</p>
+            <ul class="list-inline mb-0">
+              <li class="list-inline-item"><a class="social-link" href="#!"><i class="fab fa-facebook-f"></i></a></li>
+              <li class="list-inline-item"><a class="social-link" href="#!"><i class="fab fa-twitter"></i></a></li>
+              <li class="list-inline-item"><a class="social-link" href="#!"><i class="fab fa-linkedin-in"></i></a></li>
+              <li class="list-inline-item"><a class="social-link" href="#!"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="copyrights px-4">
+        <div class="container py-4 border-top text-center">
+          <p class="mb-0 text-muted py-2">&copy; 2024.05 All rights reserved. <a target="_blank" href="https://max-gao.github.io/my-website/root/index.html" title="link">link</a>. </p>
+        </div>
+      </div>
+    </footer>
+    <!-- JavaScript files-->
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/front.js"></script>
+    <!-- FontAwesome CSS - loading as last, so it doesn't block rendering-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  </body>
+</html>
