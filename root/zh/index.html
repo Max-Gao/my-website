@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>个人主页 | 高 敏</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="all,follow">
+    <!-- Google fonts-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,800&amp;display=swap">
+    <!-- theme stylesheet-->
+    <link rel="stylesheet" href="../css/style.default.css" id="theme-stylesheet">
+    <!-- Custom stylesheet - for your changes-->
+    <link rel="stylesheet" href="../css/custom.css">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="../img/favicon.png">
+  </head>
+  <body class="scrollspy-example" data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="0" tabindex="0">
+    <!-- navbar-->
+    <header class="header">
+      <nav class="navbar navbar-light navbar-expand-lg fixed-top" id="navbar">
+        <div class="container"><a class="navbar-brand" href="index.html"><img src="../img/logo.svg" alt="" width="45"></a>
+          <button class="navbar-toggler navbar-toggler-end" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i class="fas fa-bars"></i></button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a class="nav-link text-uppercase active" href="#hero">主页<span class="sr-only">(current)</span></a></li>
+              <li class="nav-item"><a class="nav-link text-uppercase" href="#about">关于</a></li>
+              <li class="nav-item"><a class="nav-link text-uppercase" href="#expertise">专业知识</a></li>
+              <li class="nav-item"><a class="nav-link text-uppercase" href="#education">学历</a></li>
+              <li class="nav-item"><a class="nav-link text-uppercase" href="#experience">工作经历</a></li>
+              <li class="nav-item"><a class="nav-link text-uppercase" href="#contact">联络方式</a></li>
+              
+              <select id="language-selector">
+                <option value="../index.html">Language Selection</option>
+                <option value="../en/index.html">English</option>
+                <option value="../zh/index.html" selected>中文</option>
+                <option value="../jp/index.html">日本語</option>
+              </select>
+                  
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Hero Section-->
+    <section class="hero bg-cover bg-center py-5" id="hero" style="background: url(../img/author3.JPG)">
+      <div class="container py-5 my-5 z-index-20 position-relative">
+        <div class="row py-lg-5 mt-5">
+          <div class="col-md-8 text-white img-text-down">
+            <h2 class="h4 text-primary fw-normal mb-0">你好</h2>
+            <h1 class="text-uppercase text-xl mb-0">我是<span class="text-primary">高</span>敏</h1>
+            <h2 class="h4 fw-normal mb-5">后端开发工程师</h2>
+            <p class="text-shadow">2011年，我第一次来到日本。在日本完成学业后，我开始在这里工作。在过去的九年里，我在多个领域工作过，包括网页开发、大数据开发和车载软件的项目管理。我对人工智能和Web3相关的技术也很感兴趣，并且希望在这些先进领域进一步提升自我。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About Section-->
+    <section class="py-5 bg-light" id="about">
+      <div class="container py-5">
+        <header class="mb-5">
+          <p class="fw-bold text-primary text-uppercase letter-spacing-3">创新解决方案</p>
+          <h2 class="h3 lined">个人项目</h2>
+        </header>
+        <p class="lead text-muted">为了提高我的技术技能并将其应用于实践，我构建了一个包括前端和后端的财务管理系统和会员管理系统。</p>
+        <p class="text-muted"> 需求定义使用Spring Boot 2.3.4、MySQL 5.7、Redis 5.0、阿里云（短信服务、OSS、Nacos）和Vue3。 </p>
+        <p class="text-muted mb-0" >尚融宝财务系统： <a href="https://gitee.com/max-g/shangrongbao">https://gitee.com/max-g/shangrongbao</a></p>
+        <p class="text-muted"> 需求定义使用Spring Boot 2.3.4、Spring Security、Redis 5.0、Jwt、阿里云（短信服务、OSS、Nacos）和ruoyi-Vue。 </p>
+        <p class="text-muted mb-0" >美颜会员管理系统： <a href="https://github.com/Max-Gao/ruoyi-ui.git">https://github.com/Max-Gao/ruoyi-ui.git</a></p>
+        <p class="lead text-muted">我还尝试基于HDFS在本地构建一个大数据收集和处理系统，以及一个用户画像分析系统。</p>
+        <p class="text-muted"> 需求定义使用阿里云、HDFS、Zookeeper、Flume、Kafka、MySQL、Hive、Spark、DolphinScheduler和Redis。</p>
+        <p class="text-muted mb-0" >用户画像管理系统: <a href="https://github.com/Max-Gao/user-profile-manager.git">https://github.com/Max-Gao/user-profile-manager.git</a></p> 
+      </div>
+    </section>
+    <!-- Expertise Section        -->
+    <section class="py-5" id="expertise">
+      <div class="container py-5">
+        <header class="mb-5 pb-4">
+          <p class="fw-bold text-primary text-uppercase letter-spacing-3">广泛的IT领域专业知识</p>
+          <h2 class="text-uppercase lined">专业知识</h2>
+        </header>
+        <div class="row gy-5">
+          <div class="col-md-6">
+            <h3 class="h4"><span class="text-primary me-2">01</span>网络开发</h3>
+            <p class="text-muted text-sm ms-4 ps-3">使用Java和C#进行系统软件和移动开发项目方面有经验。我了解流行的前端项目架构，比如Vue3和React。我也有使用阿里云和AWS的经验。</p>
+          </div>
+          <div class="col-md-6">
+            <h3 class="h4"><span class="text-primary me-2">02</span>大数据开发</h3>
+            <p class="text-muted text-sm ms-4 ps-3">基于HDFS，可以使用本地服务器或云服务器构建离线数据仓库。我了解使用Spark和Flink等大数据技术的实时处理框架。</p>
+          </div>
+          <div class="col-md-6">
+            <h3 class="h4"><span class="text-primary me-2">03</span>车载软件系统</h3>
+            <p class="text-muted text-sm ms-4 ps-3">管理了4个部门的20多名开发人员，并在一块新的车载主板上实施了iAuto1.0系统。我实现了诸如收音机、USB、Carplay和蓝牙等功能，从中获得了68万美元的利润。</p>
+          </div>
+          <div class="col-md-6">
+            <h3 class="h4"><span class="text-primary me-2">04</span>区块链和人工智能</h3>
+            <p class="text-muted text-sm ms-4 ps-3">自2017年以来，我一直在学习区块链知识，并成为Web3分散化的信仰者。我正在尝试参与DAO并建立区块链项目。我也对人工智能时代的到来感到兴奋。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Education Section-->
+    <section class="py-5 bg-light" id="education">
+      <div class="container py-5">
+        <header class="mb-5 pb-4">
+          <p class="fw-bold text-primary text-uppercase letter-spacing-3">终身追求知识</p>
+          <h2 class="text-uppercase lined">教育</h2>
+        </header>
+        <!--  Timeline -->
+        <ul class="timeline">
+              <!-- Timeline item-->
+              <li class="timeline-item ms-3 pb-4">
+                <div class="timeline-arrow"></div>
+                <div class="row gx-0 gy-4">
+                  <div class="col-lg-5">
+                    <p class="fw-bold mb-2 text-primary text-sm">2013年4月 - 2015年3月 </p>
+                    <h2 class="h5 mb-0 text-uppercase">电气工程</h2>
+                    <p class="text-sm mb-0">关东学院大学</p><span class="small text-muted">日本，横滨</span>
+                  </div>
+                  <div class="col-lg-7">
+                    <p class="text-muted">在日本攻读研究生期间，我的研究重点是图像信息技术。在整个学习过程中，我深入研究了信息学中的图像处理知识。我的论文项目涉及利用C语言、OpenCV数据库和红外摄像头，在空间环境中进行室内人体识别和跟踪。</p>
+                  </div>
+                </div>
+              </li>
+              <!-- Timeline item-->
+              <li class="timeline-item ms-3 pb-4">
+                <div class="timeline-arrow"></div>
+                <div class="row gx-0 gy-4">
+                  <div class="col-lg-5">
+                    <p class="fw-bold mb-2 text-primary text-sm">Oct.2011 - Apr.2013 </p>
+                    <h2 class="h5 mb-0 text-uppercase">日语</h2>
+                    <p class="text-sm mb-0">东京国际日本语学校</p><span class="small text-muted">日本，东京</span>
+                  </div>
+                  <div class="col-lg-7">
+                    <p class="text-muted">当我第一次来到日本时，我选择去日语学校学习日语，提高学业水平，并适应日本的生活。在语言学校的时候，我有机会结识来自各个国家的同学，学习基础日语，并探索日本许多有趣的地方。</p>
+                  </div>
+                </div>
+              </li>
+              <!-- Timeline item-->
+              <li class="timeline-item ms-3 pb-4">
+                <div class="timeline-arrow"></div>
+                <div class="row gx-0 gy-4">
+                  <div class="col-lg-5">
+                    <p class="fw-bold mb-2 text-primary text-sm">2007年9月 - 2011年7月 </p>
+                    <h2 class="h5 mb-0 text-uppercase">印刷工程/<br>计算机科学与技术</h2>
+                    <p class="text-sm mb-0">内蒙古工业大学</p><span class="small text-muted">中国，呼和浩特</span>
+                  </div>
+                  <div class="col-lg-7">
+                    <p class="text-muted">感觉到计算机技术是未来发展的方向，我选择在大学期间修读与计算机相关的课程，包括计算机原理、计算机网络、C编程语言、数据库等等。通过成功的论文答辩，我获得了计算机科学与技术双学位。此外，在大学期间，我还通过了英语六级考试。</p>
+                  </div>
+                </div>
+              </li>
+        </ul>
+      </div>
+    </section>
+    <!-- Experience Section        -->
+    <section class="py-5" id="experience">
+      <div class="container py-5">
+        <header class="mb-5 pb-4">
+          <p class="fw-bold text-primary text-uppercase letter-spacing-3">熟悉日本的软件开发</p>
+          <h2 class="text-uppercase lined">工作经历</h2>
+        </header>
+        <!--  Timeline -->
+        <ul class="timeline">
+              <!-- Timeline item-->
+              <li class="timeline-item ms-3 pb-4">
+                <div class="timeline-arrow"></div>
+                <div class="row gx-0 gy-4">
+                  <div class="col-lg-5">
+                    <p class="fw-bold mb-2 text-primary text-sm">2023年8月 – 至今 </p>
+                    <h2 class="h5 mb-0 text-uppercase">MAIASOFT有限公司</h2>
+                    <p class="text-sm mb-0">系统工程师</p><span class="small text-muted">日本，东京</span>
+                  </div>
+                  <div class="col-lg-7">
+                    <p class="text-muted">完成了银行后端系统的页面修改，并为系统添加了批处理功能。提高了编写基本设计文档、详细设计文档以及进行代码审查的能力。</p>
+                  </div>
+                </div>
+              </li>
+              <!-- Timeline item-->
+              <li class="timeline-item ms-3 pb-4">
+                <div class="timeline-arrow"></div>
+                <div class="row gx-0 gy-4">
+                  <div class="col-lg-5">
+                    <p class="fw-bold mb-2 text-primary text-sm">2021年8月至2023年6月 </p>
+                    <h2 class="h5 mb-0 text-uppercase">上汽零束科技有限公司</h2>
+                    <p class="text-sm mb-0">组长</p><span class="small text-muted">中国，上海</span>
+                  </div>
+                  <div class="col-lg-7">
+                    <p class="text-muted">组织了与安全相关的车辆驾驶指示系统，并基于阿里云的大数据构建了车辆运行安全指标的数据仓库。</p>
+                  </div>
+                </div>
+              </li>
+              <!-- Timeline item-->
+              <li class="timeline-item ms-3 pb-4">
+                <div class="timeline-arrow"></div>
+                <div class="row gx-0 gy-4">
+                  <div class="col-lg-5">
+                    <p class="fw-bold mb-2 text-primary text-sm">2017年9月-2021年7月 </p>
+                    <h2 class="h5 mb-0 text-uppercase">商泰汽车科技有限公司</h2>
+                    <p class="text-sm mb-0">组长</p><span class="small text-muted">中国，上海</span>
+                  </div>
+                  <div class="col-lg-7">
+                    <p class="text-muted">理解了车载软件的基本架构设计，并作为团队负责人（TL）管理开发进度。当出现错误时，及时与团队解决，并管理与客户和供应商之间的沟通。</p>
+                  </div>
+                </div>
+              </li>
+              <!-- Timeline item-->
+              <li class="timeline-item ms-3 pb-4">
+              <div class="timeline-arrow"></div>
+              <div class="row gx-0 gy-4">
+                <div class="col-lg-5">
+                  <p class="fw-bold mb-2 text-primary text-sm">2015年4月 - 2019年9月 </p>
+                  <h2 class="h5 mb-0 text-uppercase">CAICA DIGITAL有限公司</h2>
+                  <p class="text-sm mb-0">系统工程师</p><span class="small text-muted">日本，东京</span>
+                </div>
+                <div class="col-lg-7">
+                  <p class="text-muted">主要从事金融信息和交通图像系统应用的开发、设计和测试。积累了丰富的软件开发经验，并对软件开发流程和工作环境有了深入的了解。
+                  </p>
+                </div>
+              </div>
+            </li>
+        </ul>
+      </div>
+    </section>
+    <!-- Education Section        -->
+    <section class="bg-light py-5" id="contact">
+      <div class="container py-5">
+        <header class="mb-5 pb-4">
+          <p class="fw-bold text-primary text-uppercase letter-spacing-3">请随时联系我</p>
+          <h2 class="text-uppercase lined">联络方式</h2>
+        </header>
+        <div class="row gy-4">
+          <div class="col-lg-3 col-md-6"><a class="px-4 py-5 text-center contact-item shadow-sm reset-anchor d-block" href="#!"><i class="fas fa-map-marker-alt fa-2x mb-4"></i>
+              <h4 class="contact-item-title h5 text-uppercase">位置</h4>
+              <p class="text-sm mb-0">日本，东京</p></a></div>
+          <div class="col-lg-3 col-md-6"><a class="px-4 py-5 text-center contact-item shadow-sm reset-anchor d-block" href="tel:534456886"><i class="fas fa-map-marker-alt fa-2x mb-4"></i>
+              <h4 class="contact-item-title h5 text-uppercase">手机</h4>
+              <p class="text-sm mb-0">070-9168-0216</p></a></div>
+          <div class="col-lg-3 col-md-6"><a class="px-4 py-5 text-center contact-item shadow-sm reset-anchor d-block" href="https://github.com/Max-Gao"><i class="fas fa-map-marker-alt fa-2x mb-4"></i>
+              <h4 class="contact-item-title h5 text-uppercase">网站</h4>
+              <p class="text-sm mb-0">https://github.com/Max-Gao</p></a></div>
+          <div class="col-lg-3 col-md-6"><a class="px-4 py-5 text-center contact-item shadow-sm reset-anchor d-block" href="gaomin19880216@outlook.com"><i class="fas fa-map-marker-alt fa-2x mb-4"></i>
+              <h4 class="contact-item-title h5 text-uppercase">邮件</h4>
+              <p class="text-sm mb-0">gaomin19880216@outlook.com</p></a></div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer-->
+    <footer class="pt-5">
+      <div class="container text-center py-5">
+        <div class="row px-4">
+          <div class="col-lg-7 mx-auto">
+            <h2 class="text-uppercase mb-0">高 敏 </h2>
+            <h6 class="text-primary text-uppercase mb-0 letter-spacing-3">后端开发工程师</h6>
+            <p class="text-muted my-4">直面现实，勇敢尝试，终将抵达理想的彼岸。</p>
+            <ul class="list-inline mb-0">
+              <li class="list-inline-item"><a class="social-link" href="#!"><i class="fab fa-facebook-f"></i></a></li>
+              <li class="list-inline-item"><a class="social-link" href="#!"><i class="fab fa-twitter"></i></a></li>
+              <li class="list-inline-item"><a class="social-link" href="#!"><i class="fab fa-linkedin-in"></i></a></li>
+              <li class="list-inline-item"><a class="social-link" href="#!"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="copyrights px-4">
+        <div class="container py-4 border-top text-center">
+          <p class="mb-0 text-muted py-2">&copy; 2024.05 All rights reserved. <a target="_blank" href="https://max-gao.github.io/my-website/root/index.html" title="link">link</a>. </p>
+        </div>
+      </div>
+    </footer>
+    <!-- JavaScript files-->
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/front.js"></script>
+    <!-- FontAwesome CSS - loading as last, so it doesn't block rendering-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  </body>
+</html>
