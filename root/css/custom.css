@@ -1,1 +1,35 @@
 /* your styles go here */
+/* 针对select元素 */
+#language-selector {
+  text-align: left;
+  text-align-last: left; /* For most browsers */
+  width: 170px; /* 固定宽度 */
+  overflow: hidden; /* 隐藏溢出的内容 */
+  font-size: 16px; /* 字体大小 */
+  border: 1px solid #ccc; /* 边框 */
+  border-radius: 4px; /*圆角边框*/
+  background-color: #fff; /* 背景色 */
+  color: #333; /* 字体颜色 */
+}
+
+/* 针对select元素的焦点样式 */
+#language-selector:focus {
+  border-color: #007bff; /* 焦点时的边框颜色 */
+  outline: none; /* 移除默认的焦点样式 */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* 焦点时的阴影效果 */
+}
+
+/* 针对select元素内的option元素 */
+#language-selector option {
+  text-align: left;
+  font-size: 16px; /* 设置字体大小 */
+  padding: 5px; /* 设置内边距 */
+}
+
+/* 语言选择器的额外样式 */
+.language-selector {
+  margin-top: 20px; /* 上边距 */
+  margin-bottom: 20px; /* 下边距 */
+}
+
+
