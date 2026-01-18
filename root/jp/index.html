@@ -20,7 +20,10 @@
     <!-- navbar-->
     <header class="header">
       <nav class="navbar navbar-light navbar-expand-lg fixed-top" id="navbar">
-        <div class="container"><a class="navbar-brand" href="index.html"><img src="../img/logo.svg" alt="" width="45"></a>
+        <div class="container-fluid px-4">
+          <a class="navbar-brand" href="index.html" style="font-size: 1.5rem; font-weight: 700; letter-spacing: 0.15em; color: #007bff;">
+            <i class="fas fa-user-circle" style="margin-right: 0.5rem; font-size: 1.2em;"></i>
+          </a>
           <button class="navbar-toggler navbar-toggler-end" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i class="fas fa-bars"></i></button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto">
@@ -31,13 +34,15 @@
               <li class="nav-item"><a class="nav-link text-uppercase" href="#experience">経験</a></li>
               <li class="nav-item"><a class="nav-link text-uppercase" href="#contact">連絡先</a></li>
               
-              <select id="language-selector">
-                <option value="../index.html">言語選択</option>
-                <option value="../en/index.html">English</option>
-                <option value="../zh/index.html">中文</option>
-                <option value="../jp/index.html" selected>日本語</option>
-              </select>
-                  
+              <li class="nav-item language-selector-wrapper">
+                <i class="fas fa-globe" style="margin-right: 0.5rem; color: #666; font-size: 1rem;"></i>
+                <select id="language-selector" class="language-selector-custom">
+                  <option value="../index.html">言語選択</option>
+                  <option value="../en/index.html">English</option>
+                  <option value="../zh/index.html">中文</option>
+                  <option value="../jp/index.html" selected>日本語</option>
+                </select>
+              </li>
             </ul>
           </div>
         </div>
@@ -51,7 +56,7 @@
             <h2 class="h4 text-primary fw-normal mb-0">こんにちは、</h2>
             <h1 class="text-uppercase text-xl mb-0">私は<span class="text-primary">高</span>敏です</h1>
             <h2 class="h4 fw-normal mb-5">バックエンドエンジニア</h2>
-            <p class="text-shadow">2011年に初めて日本に来ました。日本での勉強を終えた後、ソフトウェア開発会社に就職しました。過去9年間、ウェブ開発やビッグデータ開発、自動車ソフトウェアのプロジェクト管理など、さまざまな分野で働いてきました。また、AIやWeb3に関連する技術にも興味があり、これらの先進的な分野でスキルをさらに磨くことを目指しています。</p>
+            <p class="text-shadow">2011年に大学院留学のため初めて日本へ参りました。卒業後、複数のソフトウェア開発企業に勤務し、現在に至ります。この十数年間で、モバイルアプリケーション開発、ビッグデータ処理、車載ソフトウェアシステム開発など多岐にわたる分野に携わってきました。現在は人工知能やWeb3といった先端技術に強い関心を持ち、これらの領域での専門性をさらに深めることを目指しています。</p>
           </div>
         </div>
       </div>
@@ -59,18 +64,32 @@
     <!-- About Section-->
     <section class="py-5 bg-light" id="about">
       <div class="container py-5">
-        <header class="mb-5">
+        <header class="mb-5 pb-4">
           <p class="fw-bold text-primary text-uppercase letter-spacing-3">イノベーティブな解決策</p>
           <h2 class="h3 lined">個人プロジェクト</h2>
         </header>
-        <br class="lead text-muted">技術スキルを向上させ、実践に活かすために、フロントエンドとバックエンドの両方を備えた財務管理システムと会員管理システムを構築しました。</p>
-        <p class="text-muted"> 要件定義はSpring Boot 2.3.4、MySQL 5.7、Redis 5.0、AlibabaCloud（SMS、OSS、Nacos）およびVue3を使用しました。 </p>
-        <p class="text-muted mb-0" >尚融宝財務システム: <a href="https://gitee.com/max-g/shangrongbao">https://gitee.com/max-g/shangrongbao</a></p>
-        <p class="text-muted"> 要件定義はSpring Boot2.3.4、Spring Security、Redis 5.0、JWT、AlibabaCloud (SMS, OSS,Nacos)およびruoyi-Vueを使用しました。 </p>
-        <p class="text-muted mb-0" >美顔会員管理システム: <a href="https://github.com/Max-Gao/ruoyi-ui.git">https://github.com/Max-Gao/ruoyi-ui.git</a></p>
-        <br class="lead text-muted">HDFSをベースにしたローカルでのビッグデータ収集および処理システム、そしてプロファイル分析システムの構築も試みました。</br>
-        <p class="text-muted"> 要件定義はHadoop2.7.2、Zookeeper3.4.10、MySQL5.6.24、Hive1.2.1、Flume1.7.0、Kafka2.4.1、Spark2.1.1、Flink1.13.0、Redis6.0.8、ClickHouse20.4.5.36-2を使用しました。</p>
-        <p class="text-muted mb-0" >ユーザープロファイル管理システム: <a href="https://github.com/Max-Gao/user-profile-manager.git">https://github.com/Max-Gao/user-profile-manager.git</a></p>  
+        <p class="lead text-muted" style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 2rem;">技術スキルを実践的に高めるため、フロントエンドとバックエンド双方を備えた複数の完全なシステムを開発しました。要件分析、アーキテクチャ設計から実装・展開までの全ライフサイクル開発能力を示しています。</p>
+        
+        <div class="mb-5" style="padding: 1.5rem; background: #f9f9f9; border-left: 4px solid #007bff; border-radius: 4px;">
+          <h4 class="h5 mb-3" style="color: #333; font-weight: 700; font-size: 1.15rem;">尚融宝財務管理システム</h4>
+          <p class="text-muted mb-3" style="line-height: 1.8; font-size: 0.95rem;">金融商品管理、ユーザー資産管理、取引記録など、主要な金融機能を実装した包括的なプラットフォーム。マイクロサービスアーキテクチャを採用し、フロントエンド・バックエンド分離設計。</p>
+          <p class="text-muted mb-2" style="line-height: 1.7; font-size: 0.9rem; color: #666;"><strong>技術スタック：</strong>Spring Boot 2.3.4 • MySQL 5.7 • Redis 5.0 • Vue3 • Alibaba Cloud（SMS、OSS、Nacos）</p>
+          <p class="mb-0"><a href="https://gitee.com/max-g/shangrongbao" style="color: #007bff; text-decoration: none; font-weight: 500; font-size: 0.95rem;">ソースコード →</a></p>
+        </div>
+        
+        <div class="mb-5" style="padding: 1.5rem; background: #f9f9f9; border-left: 4px solid #28a745; border-radius: 4px;">
+          <h4 class="h5 mb-3" style="color: #333; font-weight: 700; font-size: 1.15rem;">栄誉宝従業員管理システム</h4>
+          <p class="text-muted mb-3" style="line-height: 1.8; font-size: 0.95rem;">企業組織管理向けに設計された統合情報システム。従業員情報、権限管理、業務フロー機能などをサポート。エンタープライズレベルのセキュリティ認証メカニズムを統合。</p>
+          <p class="text-muted mb-2" style="line-height: 1.7; font-size: 0.9rem; color: #666;"><strong>技術スタック：</strong>Spring Boot 2.3.4 • Spring Security • Redis 5.0 • JWT • RuoYi-Vue • Alibaba Cloud（SMS、OSS、Nacos）</p>
+          <p class="mb-0"><a href="https://github.com/Max-Gao/ruoyi-ui.git" style="color: #007bff; text-decoration: none; font-weight: 500; font-size: 0.95rem;">ソースコード →</a></p>
+        </div>
+        
+        <div class="mb-5" style="padding: 1.5rem; background: #f9f9f9; border-left: 4px solid #ffc107; border-radius: 4px;">
+          <h4 class="h5 mb-3" style="color: #333; font-weight: 700; font-size: 1.15rem;">ユーザープロファイルビッグデータ分析システム</h4>
+          <p class="text-muted mb-3" style="line-height: 1.8; font-size: 0.95rem;">ビッグデータ技術に基づいて構築されたユーザー分析プラットフォーム。複数のデータソースを統合し、データ収集、処理、保存、分析の完全なパイプラインを実現。ユーザー分類と精密マーケティングのためのデータサポートを提供。</p>
+          <p class="text-muted mb-2" style="line-height: 1.7; font-size: 0.9rem; color: #666;"><strong>技術スタック：</strong>Hadoop 2.7.2 • Zookeeper 3.4.10 • Hive 1.2.1 • Flume 1.7.0 • Kafka 2.4.1 • Spark 2.1.1 • Flink 1.13.0 • MySQL 5.6.24 • Redis 6.0.8 • ClickHouse</p>
+          <p class="mb-0"><a href="https://github.com/Max-Gao/user-profile-manager.git" style="color: #007bff; text-decoration: none; font-weight: 500; font-size: 0.95rem;">ソースコード →</a></p>
+        </div>
       </div>
     </section>
     <!-- Expertise Section        -->
@@ -82,20 +101,28 @@
         </header>
         <div class="row gy-5">
           <div class="col-md-6">
-            <h3 class="h4"><span class="text-primary me-2">01</span>Webアプリ開発</h3>
-            <p class="text-muted text-sm ms-4 ps-3">JavaやC#を使用したシステムソフトウェアやモバイル開発プロジェクトの経験があります。また、Vue3やReactなどの人気のあるフロントエンドプロジェクトのアーキテクチャを理解しています。AlibabacloudやAWSの使用経験もあります。</p>
+            <div style="padding: 1.5rem; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #007bff; min-height: 280px;">
+              <h3 class="h4"><span class="text-primary me-3" style="font-size: 2rem;">01</span>Webアプリケーション開発</h3>
+              <p class="text-muted text-sm ms-4 ps-3" style="margin-top: 1rem;">JavaおよびC#を用いたバックエンド開発、モバイルアプリケーション開発の豊富な経験があります。フロントエンドではVue3、Reactなどの最新フレームワークのアーキテクチャに精通。Alibaba Cloud、AWSなどクラウドプラットフォームの実装経験も有しています。</p>
+            </div>
           </div>
           <div class="col-md-6">
-            <h3 class="h4"><span class="text-primary me-2">02</span>ビッグデータ開発</h3>
-            <p class="text-muted text-sm ms-4 ps-3">HDFSをベースにして、ローカルサーバーやクラウドサーバーのいずれかを使用してオフラインデータウェアハウスを構築することが可能です。また、SparkやFlinkなどのビッグデータ技術を使用したリアルタイム処理フレームワークに関する知識も持っています。</p>
+            <div style="padding: 1.5rem; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #28a745; min-height: 280px;">
+              <h3 class="h4"><span class="text-success me-3" style="font-size: 2rem;">02</span>ビッグデータ処理システム</h3>
+              <p class="text-muted text-sm ms-4 ps-3" style="margin-top: 1rem;">HDFS基盤のオフラインデータウェアハウスの構築・運用が可能です。オンプレミスおよびクラウド環境双方での実装経験があります。Spark、Flink等を用いたリアルタイムストリーム処理フレームワークの開発・最適化に精通しています。</p>
+            </div>
           </div>
           <div class="col-md-6">
-            <h3 class="h4"><span class="text-primary me-2">03</span>車載ソフトウェアシステム</h3>
-            <p class="text-muted text-sm ms-4 ps-3">複数の部門にまたがる25人以上の開発者チームを管理し、新しい車載用マザーボード上にiAuto1.0システムを実装しました。ラジオ、USB、Carplay、Bluetoothなどの機能を実装し、これにより68万ドルの利益を上げました。</p>
+            <div style="padding: 1.5rem; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #ffc107; min-height: 280px;">
+              <h3 class="h4"><span class="text-warning me-3" style="font-size: 2rem;">03</span>車載ソフトウェアシステム開発</h3>
+              <p class="text-muted text-sm ms-4 ps-3" style="margin-top: 1rem;">複数部門の25名以上の開発チームを統括し、新世代車載マザーボード向けiAuto 1.0システムの実装をリード。ラジオ、USB、CarPlay、Bluetooth等の重要機能を実装し、68万ドルの利益生成に貢献しました。</p>
+            </div>
           </div>
           <div class="col-md-6">
-            <h3 class="h4"><span class="text-primary me-2">04</span>ブロックチェーンと人工知能</h3>
-            <p class="text-muted text-sm ms-4 ps-3">積極的にAI技術を活用しており、現在は組み込み開発を学びながらAI技術との融合を模索しています。また、以前ブロックチェーンの知識について理解してWeb3の分散化を信じるようになりました。</p>
+            <div style="padding: 1.5rem; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #dc3545; min-height: 280px;">
+              <h3 class="h4"><span class="text-danger me-3" style="font-size: 2rem;">04</span>ブロックチェーン・AI技術</h3>
+              <p class="text-muted text-sm ms-4 ps-3" style="margin-top: 1rem;">AI技術の活用に力を入れており、組み込み開発研修を受けながらAI技術との融合可能性を探索しています。ブロックチェーン技術についても深く学習し、Web3の分散化理念に共感。今後の技術トレンドにおける両領域の融合に関心を持っています。</p>
+            </div>
           </div>
         </div>
       </div>
@@ -119,7 +146,7 @@
                     <p class="text-sm mb-0">関東学院大学</p><span class="small text-muted">日本, 横浜</span>
                   </div>
                   <div class="col-lg-7">
-                    <p class="text-muted">日本の大学院時代の研究テーマは「画像情報技術」でした。研究を通じて、情報学における画像処理の知識と技術に深く入り込みました。私の論文プロジェクトでは、C言語、OpenCVデータベース、赤外線カメラを使用して、空間環境における屋内人体認識と追跡を行いました。</p>
+                    <p class="text-muted">関東学院大学大学院在学中、専攻分野は画像情報技術。画像処理アルゴリズムと応用に関する深い研究に従事しました。卒業論文ではC言語、OpenCVライブラリ、赤外線カメラを活用し、屋内空間における人体検出・追跡システムの実装に成功しました。</p>
                   </div>
                 </div>
               </li>
@@ -133,7 +160,7 @@
                     <p class="text-sm mb-0">東京ワールド日本語学校</p><span class="small text-muted">日本, 東京</span>
                   </div>
                   <div class="col-lg-7">
-                    <p class="text-muted">日本に初めて来た時、日本語を学び、学業を進め、日本での生活に慣れるために、日本語学校に通うことを選びました。その期間中、さまざまな国のクラスメートと出会い、基本的な日本語を学び、日本の多くの面白い場所を探検する機会を得ました。</p>
+                    <p class="text-muted">初来日時に日本語学校への入学を決定し、言語スキルの向上と日本生活への適応を図りました。在学期間中、世界各国からの留学生と交流し、日本語の基礎知識を体系的に習得。並行して日本文化と社会生活を深く理解する機会に恵まれました。</p>
                   </div>
                 </div>
               </li>
@@ -147,7 +174,7 @@
                     <p class="text-sm mb-0">内モンゴル工業大学</p><span class="small text-muted">中国, 呼和浩特</span>
                   </div>
                   <div class="col-lg-7">
-                    <p class="text-muted">コンピューター技術が将来の発展方向であると感じ、大学時代にコンピューター関連の科目を選択しました。その中には、コンピューター原理、コンピュータネットワーク、Cプログラミング言語、データベースなどが含まれています。成功した論文審査を通じて、コンピューター科学と技術の両方の学位を取得しました。さらに、大学時代には英語レベル6の試験に合格しました。</p>
+                    <p class="text-muted">コンピューター技術が今後の発展の鍵になると認識し、本科課程でコンピューター関連科目に注力。コンピューター原理、ネットワーク、Cプログラミング、データベースなど核心科目を修習。卒業論文審査に合格し、印刷工学とコンピューター科学・技術の双学位を取得。同期間に英語6級試験に合格し、英文コミュニケーション能力を証明しました。</p>
                   </div>
                 </div>
               </li>
@@ -158,7 +185,7 @@
     <section class="py-5" id="experience">
       <div class="container py-5">
         <header class="mb-5 pb-4">
-          <p class="fw-bold text-primary text-uppercase letter-spacing-3">日本におけるソフトウェア開発に精通しています</p>
+          <p class="fw-bold text-primary text-uppercase letter-spacing-3">職务経歴</p>
           <h2 class="text-uppercase lined">主な経験</h2>
         </header>
         <!--  Timeline -->
@@ -173,7 +200,7 @@
                     <p class="text-sm mb-0">システムエンジニア</p><span class="small text-muted">日本, 東京</span>
                   </div>
                   <div class="col-lg-7">
-                    <p class="text-muted">銀行のバックエンドシステムのページ修正を完了し、システムにバッチ機能を追加しました。基本設計書、詳細設計書の作成能力やコードレビューの実施能力を向上させました。</p>
+                    <p class="text-muted">銀行向けバックエンドシステムのページ修正を完了し、バッチ処理機能の新規実装を実現。基本設計書・詳細設計書の作成スキルとコードレビュー実施能力を確実に向上させました。</p>
                   </div>
                 </div>
               </li>
@@ -215,8 +242,7 @@
                   <p class="text-sm mb-0">システムエンジニア</p><span class="small text-muted">日本, 東京</span>
                 </div>
                 <div class="col-lg-7">
-                  <p class="text-muted">主に情報ユーザー携帯アプリの開発、設計、テストに従事してきました。ソフトウェア開発の経験を積み重ね、ソフトウェア開発プロセスと作業環境についての理解を深めてきました。
-                  </p>
+                  <p class="text-muted">主にユーザー向けモバイルアプリの開発・設計・テストを担当。ソフトウェア開発の実務を通じ、開発プロセスと作業環境に関する理解を段階的に深化させました。</p>
                 </div>
               </div>
             </li>
@@ -230,8 +256,7 @@
                   <p class="text-sm mb-0">システムエンジニア</p><span class="small text-muted">日本, 川崎</span>
                 </div>
                 <div class="col-lg-7">
-                  <p class="text-muted">主に情の映像配信システム開発、テスト、運用を担当しました。仕様に基づいて画面仕様書、テスト仕様書を作成します。
-                  </p>
+                  <p class="text-muted">情報映像配信システムの開発・テスト・運用を一貫して担当。仕様に基づいた画面設計書およびテスト仕様書の作成能力を習得しました。</p>
                 </div>
               </div>
             </li>
@@ -248,10 +273,10 @@
         <div class="row gy-4">
           <div class="col-lg-3 col-md-6"><a class="px-4 py-5 text-center contact-item shadow-sm reset-anchor d-block" href="#!"><i class="fas fa-map-marker-alt fa-2x mb-4"></i>
               <h4 class="contact-item-title h5 text-uppercase">位置</h4>
-              <p class="text-sm mb-0">日本, 東京</p></a></div>
-          <div class="col-lg-3 col-md-6"><a class="px-4 py-5 text-center contact-item shadow-sm reset-anchor d-block" href="tel:07091680216"><i class="fas fa-map-marker-alt fa-2x mb-4"></i>
+              <p class="text-sm mb-0">中国，上海</p></a></div>
+          <div class="col-lg-3 col-md-6"><a class="px-4 py-5 text-center contact-item shadow-sm reset-anchor d-block" href="tel:15000268841"><i class="fas fa-map-marker-alt fa-2x mb-4"></i>
               <h4 class="contact-item-title h5 text-uppercase">携帯電話</h4>
-              <p class="text-sm mb-0">070-9168-0216</p></a></div>
+              <p class="text-sm mb-0">150-0026-8841</p></a></div>
           <div class="col-lg-3 col-md-6"><a class="px-4 py-5 text-center contact-item shadow-sm reset-anchor d-block" href="https://github.com/Max-Gao"><i class="fas fa-map-marker-alt fa-2x mb-4"></i>
               <h4 class="contact-item-title h5 text-uppercase">マイページ</h4>
               <p class="text-sm mb-0">https://github.com/Max-Gao</p></a></div>
