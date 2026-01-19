@@ -151,12 +151,16 @@ body {
 /* === Hero Section 优化 === */
 .hero {
   padding: 80px 0 !important;
-  min-height: 600px;
+  height: 800px;
+  min-height: 800%;
+  max-height: 800px;
   display: flex;
   align-items: center;
-  background-attachment: fixed;
   background-size: cover;
-  background-position: center;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  overflow: hidden;
 }
 
 .hero::after {
@@ -430,6 +434,7 @@ footer p {
   background-color: #fff;
   color: #333;
   padding: 8px 10px;
+  padding-left: 0px;
   transition: all 0.3s ease;
   cursor: pointer;
 }
