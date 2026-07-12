@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Resume | Max Gao</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="all,follow">
+    <!-- theme stylesheet-->
+    <link rel="stylesheet" href="../css/style.default.css" id="theme-stylesheet">
+    <!-- Custom stylesheet - for your changes-->
+    <link rel="stylesheet" href="../css/custom.css">
+    <!-- Local Font Awesome -->
+    <link rel="stylesheet" href="../vendor/fontawesome/css/all.min.css">
+    <!-- Favicon-->
+    <link rel="icon" type="image/svg+xml" href="../img/favicon.svg">
+    <link rel="shortcut icon" href="../img/favicon.svg">
+  </head>
+  <body class="scrollspy-example" data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="0" tabindex="0">
+    <!-- navbar-->
+    <header class="header">
+      <nav class="navbar navbar-light navbar-expand-lg fixed-top" id="navbar">
+        <div class="container-fluid px-4">
+          <a class="navbar-brand" href="index.html" style="font-size: 1.5rem; font-weight: 700; letter-spacing: 0.15em; color: #007bff;">
+            <img src="../img/favicon.svg" alt="logo" class="brand-icon">
+          </a>
+          <button class="navbar-toggler navbar-toggler-end" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i class="fas fa-bars"></i></button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a class="nav-link text-uppercase active" href="#hero">Home</a></li>
+              <li class="nav-item"><a class="nav-link text-uppercase" href="#about">About</a></li>
+              <li class="nav-item"><a class="nav-link text-uppercase" href="#expertise">Expertise</a></li>
+              <li class="nav-item"><a class="nav-link text-uppercase" href="#education">Education</a></li>
+              <li class="nav-item"><a class="nav-link text-uppercase" href="#experience">Experience</a></li>
+              <li class="nav-item"><a class="nav-link text-uppercase" href="#contact">Contact</a></li>
+              
+              <li class="nav-item language-selector-wrapper">
+                <i class="fas fa-language language-icon" aria-hidden="true"></i>
+                <select id="language-selector" class="language-selector-custom">
+                  <option value="../en/index.html">Language Selection</option>
+                  <option value="../en/index.html" selected>English</option>
+                  <option value="../index.html">中文</option>
+                  <option value="../jp/index.html">日本語</option>
+                </select>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Hero Section-->
+    <section class="hero bg-cover bg-center py-5" id="hero" style="background-image: url(../img/20240410_in_gotanda.jpg);">
+      <div class="container py-5 my-5 z-index-20 position-relative">
+        <div class="row py-lg-5 mt-5">
+          <div class="col-md-8 text-white img-text-down">
+            <h2 class="h4 text-primary fw-normal mb-0">Hi, I am</h2>
+            <h1 class="text-uppercase text-xl mb-0">Max <span class="text-primary">Gao</span></h1>
+            <h2 class="h4 fw-normal mb-5">Full-stack Engineer</h2>
+            <p class="text-shadow">I first came to Japan in 2011 for graduate school. With about ten years of experience in software development since then, I have worked across mobile apps, big data, and automotive software. Currently, I am focused on deepening my expertise in AI and Web3.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About Section-->
+    <section class="py-5 bg-light" id="about">
+      <div class="container py-5">
+        <header class="mb-5 pb-4">
+          <p class="fw-bold text-primary text-uppercase letter-spacing-3">Innovative solutions</p>
+          <h2 class="h3 lined">Personal projects</h2>
+        </header>
+        <p class="lead text-muted" style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 2rem;">To strengthen my technical expertise and gain practical experience, I developed multiple complete systems with both frontend and backend components, demonstrating my ability in full lifecycle development from requirements analysis and architecture design to implementation and deployment.</p>
+        
+        <div class="mb-5" style="padding: 1.5rem; background: #f9f9f9; border-left: 4px solid #007bff; border-radius: 4px;">
+          <h4 class="h5 mb-3" style="color: #333; font-weight: 700; font-size: 1.15rem;">ShangRongBao Financial Management System</h4>
+          <p class="text-muted mb-3" style="line-height: 1.8; font-size: 0.95rem;">A comprehensive financial product management platform that implements core financial functions including product issuance, user asset management, and transaction records. Adopts microservices architecture with frontend-backend separation.</p>
+          <p class="text-muted mb-2" style="line-height: 1.7; font-size: 0.9rem; color: #666;"><strong>Tech Stack:</strong> Spring Boot 2.3.4 • MySQL 5.7 • Redis 5.0 • Vue3 • Alibaba Cloud (SMS, OSS, Nacos)</p>
+          <p class="mb-0"><a href="https://gitee.com/max-g/shangrongbao" target="_blank" rel="noopener noreferrer" style="color: #007bff; text-decoration: none; font-weight: 500; font-size: 0.95rem;">View source code →</a></p>
+        </div>
+        
+        <div class="mb-5" style="padding: 1.5rem; background: #f9f9f9; border-left: 4px solid #28a745; border-radius: 4px;">
+          <h4 class="h5 mb-3" style="color: #333; font-weight: 700; font-size: 1.15rem;">RuoYi Employee Management System</h4>
+          <p class="text-muted mb-3" style="line-height: 1.8; font-size: 0.95rem;">A comprehensive information system designed for enterprise organization management, supporting employee information, permission management, and business process functions. Integrated enterprise-grade security authentication mechanisms.</p>
+          <p class="text-muted mb-2" style="line-height: 1.7; font-size: 0.9rem; color: #666;"><strong>Tech Stack:</strong> Spring Boot 2.3.4 • Spring Security • Redis 5.0 • JWT • RuoYi-Vue • Alibaba Cloud (SMS, OSS, Nacos)</p>
+          <p class="mb-0" style="display: flex; flex-wrap: wrap; gap: 0.75rem; align-items: center;">
+            <a href="https://github.com/Max-Gao/RuoYi-Employee-Management-System.git" target="_blank" rel="noopener noreferrer" style="color: #007bff; text-decoration: none; font-weight: 500; font-size: 0.95rem;">View source code →</a>
+            <span style="color: #999; font-size: 0.9rem;">|</span>
+            <a href="http://47.100.56.201/" target="_blank" rel="noopener noreferrer" style="color: #007bff; text-decoration: none; font-weight: 500; font-size: 0.95rem;">Website link →</a>
+          </p>
+        </div>
+        
+        <div class="mb-5" style="padding: 1.5rem; background: #f9f9f9; border-left: 4px solid #ffc107; border-radius: 4px;">
+          <h4 class="h5 mb-3" style="color: #333; font-weight: 700; font-size: 1.15rem;">User Profile Big Data Analysis System</h4>
+          <p class="text-muted mb-3" style="line-height: 1.8; font-size: 0.95rem;">A user analysis platform built on big data technology, integrating multiple data sources to achieve a complete pipeline of data collection, processing, storage, and analysis, providing data support for user classification and precision marketing.</p>
+          <p class="text-muted mb-2" style="line-height: 1.7; font-size: 0.9rem; color: #666;"><strong>Tech Stack:</strong> Hadoop 2.7.2 • Zookeeper 3.4.10 • Hive 1.2.1 • Flume 1.7.0 • Kafka 2.4.1 • Spark 2.1.1 • Flink 1.13.0 • MySQL 5.6.24 • Redis 6.0.8 • ClickHouse</p>
+          <p class="mb-0"><a href="https://github.com/Max-Gao/user-profile-manager.git" target="_blank" rel="noopener noreferrer" style="color: #007bff; text-decoration: none; font-weight: 500; font-size: 0.95rem;">View source code →</a></p>
+        </div>
+      </div>
+    </section>
+    <!-- Expertise Section        -->
+    <section class="py-5" id="expertise">
+      <div class="container py-5">
+        <header class="mb-5 pb-4">
+          <p class="fw-bold text-primary text-uppercase letter-spacing-3">Extensive expertise across IT domains</p>
+          <h2 class="text-uppercase lined">Expertise</h2>
+        </header>
+        <div class="row gy-5">
+          <div class="col-md-6">
+            <div style="padding: 1.5rem; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #007bff; min-height: 280px;">
+              <h3 class="h4"><span class="text-primary me-3" style="font-size: 2rem;">01</span>Web Application Development</h3>
+              <p class="text-muted text-sm ms-4 ps-3" style="margin-top: 1rem;">I have extensive experience developing system software and mobile applications using Java and C#. I am proficient with modern frontend frameworks such as Vue3 and React. Additionally, I have hands-on experience with both AlibabaCloud and AWS platforms.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div style="padding: 1.5rem; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #28a745; min-height: 280px;">
+              <h3 class="h4"><span class="text-success me-3" style="font-size: 2rem;">02</span>Big Data Development</h3>
+              <p class="text-muted text-sm ms-4 ps-3" style="margin-top: 1rem;">I can architect and build scalable offline data warehouses using HDFS, deployable on both on-premises and cloud infrastructure. I have solid knowledge of real-time data processing frameworks utilizing technologies like Spark and Flink.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div style="padding: 1.5rem; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #ffc107; min-height: 280px;">
+              <h3 class="h4"><span class="text-warning me-3" style="font-size: 2rem;">03</span>In-Vehicle Software Systems</h3>
+              <p class="text-muted text-sm ms-4 ps-3" style="margin-top: 1rem;">I successfully led a cross-departmental team of 25+ developers to implement the iAuto1.0 system on new in-vehicle hardware. Key features include Radio, USB, CarPlay, and Bluetooth connectivity, delivering significant business value exceeding $680,000 in revenue.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div style="padding: 1.5rem; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #dc3545; min-height: 280px;">
+              <h3 class="h4"><span class="text-danger me-3" style="font-size: 2rem;">04</span>AI and Blockchain</h3>
+              <p class="text-muted text-sm ms-4 ps-3" style="margin-top: 1rem;">I am actively leveraging AI technologies while currently expanding my expertise in embedded systems development. My goal is to explore synergies between AI and embedded computing in future projects. I also have a solid understanding of blockchain principles and am a strong advocate for decentralized systems in Web3.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Education Section-->
+    <section class="py-5 bg-light" id="education">
+      <div class="container py-5">
+        <header class="mb-5 pb-4">
+          <p class="fw-bold text-primary text-uppercase letter-spacing-3">Lifelong commitment to learning</p>
+          <h2 class="text-uppercase lined">Education</h2>
+        </header>
+        <!--  Timeline -->
+        <ul class="timeline">
+              <!-- Timeline item-->
+              <li class="timeline-item ms-3 pb-4">
+                <div class="timeline-arrow"></div>
+                <div class="row gx-0 gy-4">
+                  <div class="col-lg-5">
+                    <p class="fw-bold mb-2 text-primary text-sm">Apr 2013 - Mar 2015 </p>
+                    <h2 class="h5 mb-0 text-uppercase">Electrical Engineering</h2>
+                    <p class="text-sm mb-0">Kanto Gakuin University</p><span class="small text-muted">Japan, Yokohama</span>
+                  </div>
+                  <div class="col-lg-7">
+                    <p class="text-muted">During my graduate studies in Japan, I specialized in Image Information Technology, conducting in-depth research on image processing techniques and their applications. My thesis work involved implementing a human detection and tracking system using C, OpenCV, and infrared cameras for real-time indoor spatial analysis.</p>
+                  </div>
+                </div>
+              </li>
+              <!-- Timeline item-->
+              <li class="timeline-item ms-3 pb-4">
+                <div class="timeline-arrow"></div>
+                <div class="row gx-0 gy-4">
+                  <div class="col-lg-5">
+                    <p class="fw-bold mb-2 text-primary text-sm">Oct 2011 - Apr 2013 </p>
+                    <h2 class="h5 mb-0 text-uppercase">Japanese</h2>
+                    <p class="text-sm mb-0">Tokyo World Japanese Language School</p><span class="small text-muted">Japan, Tokyo</span>
+                  </div>
+                  <div class="col-lg-7">
+                    <p class="text-muted">Upon arriving in Japan, I enrolled in a Japanese language school to develop language proficiency and adapt to Japanese culture and lifestyle. This experience enriched my perspective through interactions with international peers and provided valuable exposure to Japanese society and culture.</p>
+                  </div>
+                </div>
+              </li>
+              <!-- Timeline item-->
+              <li class="timeline-item ms-3 pb-4">
+                <div class="timeline-arrow"></div>
+                <div class="row gx-0 gy-4">
+                  <div class="col-lg-5">
+                    <p class="fw-bold mb-2 text-primary text-sm">Sep 2007 - Jul 2011 </p>
+                    <h2 class="h5 mb-0 text-uppercase">Printing Engineering/<br>Computer Science and Technology</h2>
+                    <p class="text-sm mb-0">Inner Mongolia University of Technology</p><span class="small text-muted">China, Hohhot</span>
+                  </div>
+                  <div class="col-lg-7">
+                    <p class="text-muted">Recognizing the transformative potential of computer technology, I pursued a diverse curriculum encompassing computer architecture, networking, C programming, and database design. I successfully completed a dual degree program in Computer Science and Technology through thesis defense. Additionally, I achieved certification in English Level 6 proficiency.</p>
+                  </div>
+                </div>
+              </li>
+        </ul>
+      </div>
+    </section>
+    <!-- Experience Section        -->
+    <section class="py-5" id="experience">
+      <div class="container py-5">
+        <header class="mb-5 pb-4">
+          <p class="fw-bold text-primary text-uppercase letter-spacing-3">Professional Development Journey</p>
+          <h2 class="text-uppercase lined">Experience</h2>
+        </header>
+        <!--  Timeline -->
+        <ul class="timeline">
+              <!-- Timeline item-->
+              <li class="timeline-item ms-3 pb-4">
+                <div class="timeline-arrow"></div>
+                <div class="row gx-0 gy-4">
+                  <div class="col-lg-5">
+                    <p class="fw-bold mb-2 text-primary text-sm">Apr 2026 – Present</p>
+                    <h2 class="h5 mb-0 text-uppercase">Jidou Technology Co., Ltd.</h2>
+                    <p class="text-sm mb-0">Project Manager</p><span class="small text-muted">China, Shanghai</span>
+                  </div>
+                  <div class="col-lg-7">
+                    <p class="text-muted">Responsible for software system design of in-vehicle ADU and its associated DSSCDA (Data storage system combination driver assistance). Coordinated internal and external teams based on functional safety scenarios to clarify responsibilities and oversee overall project schedule and delivery quality, ensuring the development process meets safety standards. Authored system design documents and functional test documentation to guarantee design traceability and completeness of testing.</p>
+                  </div>
+                </div>
+              </li>
+              <!-- Timeline item-->
+              <li class="timeline-item ms-3 pb-4">
+                <div class="timeline-arrow"></div>
+                <div class="row gx-0 gy-4">
+                  <div class="col-lg-5">
+                    <p class="fw-bold mb-2 text-primary text-sm">Aug 2023 – Dec 2024 </p>
+                    <h2 class="h5 mb-0 text-uppercase">MAIASOFT Co., Ltd.</h2>
+                    <p class="text-sm mb-0">Systems Engineer</p><span class="small text-muted">Japan, Tokyo</span>
+                  </div>
+                  <div class="col-lg-7">
+                    <p class="text-muted">Successfully completed enhancements to banking backend systems, including page redesigns and implementation of batch processing functionality. Significantly improved technical capabilities in system architecture documentation, detailed technical specifications, and comprehensive code review processes.</p>
+                  </div>
+                </div>
+              </li>
+              <!-- Timeline item-->
+              <li class="timeline-item ms-3 pb-4">
+                <div class="timeline-arrow"></div>
+                <div class="row gx-0 gy-4">
+                  <div class="col-lg-5">
+                    <p class="fw-bold mb-2 text-primary text-sm">Dec 2021 – Feb 2022 </p>
+                    <h2 class="h5 mb-0 text-uppercase">Lingshu Technology Co., Ltd.</h2>
+                    <p class="text-sm mb-0">Project Manager</p><span class="small text-muted">China, Shanghai</span>
+                  </div>
+                  <div class="col-lg-7">
+                    <p class="text-muted">
+                      Managed projects for connected vehicle security management platforms and cybersecurity situational awareness platforms, ensuring stable, efficient, and secure system operations.
+                      Coordinated development teams, tracked project progress, and resolved implementation issues to ensure timely delivery.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <!-- Timeline item-->
+              <li class="timeline-item ms-3 pb-4">
+                <div class="timeline-arrow"></div>
+                <div class="row gx-0 gy-4">
+                  <div class="col-lg-5">
+                    <p class="fw-bold mb-2 text-primary text-sm">Sep 2018 - Jul 2021 </p>
+                    <h2 class="h5 mb-0 text-uppercase">Denso Smart(Shanghai)Technology Co., Ltd.</h2>
+                    <p class="text-sm mb-0">Project Leader</p><span class="small text-muted">China, Shanghai</span>
+                  </div>
+                  <div class="col-lg-7">
+                    <p class="text-muted">Led web application development initiatives utilizing Agile methodologies and gained extensive cloud services operational experience. Acquired in-depth knowledge of CMMI Level 5 and ASPICE automotive development frameworks and best practices.</p>
+                  </div>
+                </div>
+              </li>
+              <!-- Timeline item-->
+              <li class="timeline-item ms-3 pb-4">
+                <div class="timeline-arrow"></div>
+                <div class="row gx-0 gy-4">
+                  <div class="col-lg-5">
+                    <p class="fw-bold mb-2 text-primary text-sm">Sep 2017 - Sep 2018 </p>
+                    <h2 class="h5 mb-0 text-uppercase">iAUTO (Shanghai) Co., LTD.</h2>
+                    <p class="text-sm mb-0">Project Leader</p><span class="small text-muted">China, Shanghai</span>
+                  </div>
+                  <div class="col-lg-7">
+                    <p class="text-muted">Gained deep understanding of in-vehicle software architecture and system design principles. As Project Lead, managed development timelines, coordinated cross-functional teams, and maintained effective communication with clients and vendors throughout the project lifecycle.</p>
+                  </div>
+                </div>
+              </li>
+              <!-- Timeline item-->
+              <li class="timeline-item ms-3 pb-4">
+              <div class="timeline-arrow"></div>
+              <div class="row gx-0 gy-4">
+                <div class="col-lg-5">
+                    <p class="fw-bold mb-2 text-primary text-sm">Sep 2016 - Aug 2017 </p>
+                  <h2 class="h5 mb-0 text-uppercase">CAICA DIGITAL Co., LTD.</h2>
+                  <p class="text-sm mb-0">Systems Engineer</p><span class="small text-muted">Japan, Tokyo</span>
+                </div>
+                <div class="col-lg-7">
+                  <p class="text-muted">Spearheaded the design, development, and comprehensive testing of financial market mobile applications. Built strong expertise in software design patterns and acquired deep insights into enterprise software development methodologies and professional practices.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <!-- Timeline item-->
+            <li class="timeline-item ms-3 pb-4">
+              <div class="timeline-arrow"></div>
+              <div class="row gx-0 gy-4">
+                <div class="col-lg-5">
+                    <p class="fw-bold mb-2 text-primary text-sm">Apr 2015 - Aug 2016 </p>
+                  <h2 class="h5 mb-0 text-uppercase">Softem Co., LTD.</h2>
+                  <p class="text-sm mb-0">Systems Engineer</p><span class="small text-muted">Japan, Kawasaki</span>
+                </div>
+                <div class="col-lg-7">
+                  <p class="text-muted">Led development, testing, and operational deployment of video surveillance platform applications. Created comprehensive design and test documentation, and developed thorough understanding of enterprise software development lifecycle and professional work practices.
+                  </p>
+                </div>
+              </div>
+            </li>
+        </ul>
+      </div>
+    </section>
+    <!-- Education Section        -->
+    <section class="bg-light py-5" id="contact">
+      <div class="container py-5">
+        <header class="mb-5 pb-4">
+          <p class="fw-bold text-primary text-uppercase letter-spacing-3">Feel free to contact me.</p>
+          <h2 class="text-uppercase lined">Contact</h2>
+        </header>
+        <div class="row gy-4">
+          <div class="col-lg-3 col-md-6"><a class="px-4 py-5 text-center contact-item shadow-sm reset-anchor d-block" href="#!" style="border-top: 4px solid #007bff;"><i class="fas fa-map-marker-alt fa-2x mb-4" style="color: #007bff;"></i>
+              <h4 class="contact-item-title h5 text-uppercase">Location</h4>
+              <p class="text-sm mb-0">China, Shanghai</p></a></div>
+          <div class="col-lg-3 col-md-6"><a class="px-4 py-5 text-center contact-item shadow-sm reset-anchor d-block" href="tel:15000268841" style="border-top: 4px solid #28a745;"><i class="fas fa-phone fa-2x mb-4" style="color: #28a745;"></i>
+              <h4 class="contact-item-title h5 text-uppercase">Phone</h4>
+              <p class="text-sm mb-0">150-0026-8841</p></a></div>
+          <div class="col-lg-3 col-md-6"><a class="px-4 py-5 text-center contact-item shadow-sm reset-anchor d-block" href="https://github.com/Max-Gao" style="border-top: 4px solid #ffc107;"><i class="fab fa-github fa-2x mb-4" style="color: #ffc107;"></i>
+              <h4 class="contact-item-title h5 text-uppercase">GitHub</h4>
+              <p class="text-sm mb-0">https://github.com/Max-Gao</p></a></div>
+          <div class="col-lg-3 col-md-6"><a class="px-4 py-5 text-center contact-item shadow-sm reset-anchor d-block" style="border-top: 4px solid #dc3545;"><i class="fas fa-envelope fa-2x mb-4" style="color: #dc3545;"></i>
+              <h4 class="contact-item-title h5 text-uppercase">Email</h4>
+              <p class="text-sm mb-0">465904425@qq.com</p></a></div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer-->
+    <footer class="pt-5">
+      <div class="container text-center py-5">
+        <div class="row px-4">
+          <div class="col-lg-7 mx-auto">
+            <h2 class="text-uppercase mb-0">Max Gao </h2>
+            <h6 class="text-primary text-uppercase mb-0 letter-spacing-3">Full-stack Engineer</h6>
+            <p class="text-muted my-4">Face reality. Keep trying. Achieve the ideal.</p>
+            <ul class="list-inline mb-0">
+              <li class="list-inline-item"><a class="social-link" href="#!"><i class="fab fa-facebook-f"></i></a></li>
+              <li class="list-inline-item"><a class="social-link" href="#!"><i class="fab fa-x-twitter"></i></a></li>
+              <li class="list-inline-item"><a class="social-link" href="#!"><i class="fab fa-linkedin-in"></i></a></li>
+              <li class="list-inline-item"><a class="social-link" href="#!"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="copyrights px-4">
+        <div class="container py-4 border-top text-center">
+          <p class="mb-0 text-muted py-2">&copy; 2026.01 All rights reserved. <a href="#" title="link">link</a>. </p>
+        </div>
+      </div>
+    </footer>
+    <!-- JavaScript files-->
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/front.js"></script>
+  </body>
+</html>
