@@ -172,12 +172,12 @@ body {
 
 /* === Hero Section 优化 === */
 .hero {
-  padding: 80px 0 !important;
+  padding: 0 !important;
   height: 720px;
-  min-height: 720px;
   max-height: 720px;
   display: flex;
   align-items: center;
+  justify-content: center;
   background: transparent !important;
   background-image: none !important;
   background-size: cover;
@@ -196,6 +196,43 @@ body {
 .hero .container {
   position: relative;
   z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  margin: 0 !important;
+  padding: 3rem 0 !important;
+}
+
+.hero .row {
+  width: 100%;
+}
+
+.hero .img-text-down {
+  position: relative;
+  top: auto !important;
+  padding-top: 6rem;
+}
+
+@media (max-width: 991px) {
+  .hero {
+    height: auto;
+    min-height: 560px;
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+    align-items: flex-start;
+  }
+
+  .hero .container {
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+  }
+
+  .hero .img-text-down {
+    padding-top: 7rem;
+  }
 }
 
 .hero h2.h4 {

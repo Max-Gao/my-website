@@ -1160,7 +1160,7 @@ progress {
   }
   .img-text-down{
     position: relative;
-    top: 70px; /* 调整这个值以改变文字向下移动的距离 */
+    top: auto !important;
   }
   .col-md-9 {
     flex: 0 0 auto;
