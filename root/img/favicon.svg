@@ -1,13 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="14" fill="#007bff"/>
-  <text
-    x="50%"
-    y="50%"
-    dy="0.08em"
-    text-anchor="middle"
-    dominant-baseline="middle"
-    fill="#ffffff"
-    font-family="Segoe UI, Arial, sans-serif"
-    font-size="46"
-    font-weight="700">G</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <path
+    d="M46 18A20 20 0 1 0 52 32H36"
+    stroke="#17365D"
+    stroke-width="6"
+    stroke-linecap="round"
+    stroke-linejoin="round"/>
+  <path
+    d="M38 32H50"
+    stroke="#007BFF"
+    stroke-width="6"
+    stroke-linecap="round"/>
 </svg>

@@ -47,21 +47,63 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     /* =====================================================
-		BOOTSTRAP SCROLLSPY
-	===================================================== */
-    var scrollSpy = new bootstrap.ScrollSpy(document.body, {
-        target: "#navbar",
-        offset: 50,
+        NAVBAR ACTIVE SECTION
+        Match the highlighted link to the visible section heading,
+        not the padded section container boundary.
+    ===================================================== */
+    var navLinks = Array.from(document.querySelectorAll('#navbar .navbar-nav .nav-link[href^="#"]'));
+    var navSections = navLinks.map(function (link) {
+        var section = document.querySelector(link.getAttribute('href'));
+        return {
+            link: link,
+            heading: section && (section.querySelector('header h2') || section.querySelector('h1') || section)
+        };
+    }).filter(function (item) {
+        return item.heading;
     });
+
+    var updateActiveNav = function () {
+        if (!navSections.length) return;
+
+        var nav = document.querySelector('#navbar');
+        var navBottom = nav ? nav.getBoundingClientRect().bottom : 0;
+        var activationLine = navBottom + (window.innerHeight - navBottom) * 0.72;
+        var activeSection = navSections[0];
+
+        navSections.forEach(function (item) {
+            if (item.heading.getBoundingClientRect().top <= activationLine) {
+                activeSection = item;
+            }
+        });
+
+        navSections.forEach(function (item) {
+            item.link.classList.toggle('active', item === activeSection);
+        });
+    };
+
+    var navUpdatePending = false;
+    var scheduleActiveNavUpdate = function () {
+        if (navUpdatePending) return;
+        navUpdatePending = true;
+        window.requestAnimationFrame(function () {
+            navUpdatePending = false;
+            updateActiveNav();
+        });
+    };
+
+    window.addEventListener('scroll', scheduleActiveNavUpdate, { passive: true });
+    window.addEventListener('resize', scheduleActiveNavUpdate);
+    window.addEventListener('load', scheduleActiveNavUpdate);
+    scheduleActiveNavUpdate();
 
     /* =====================================================
         MOBILE NAVBAR - Close menu on link click
     ===================================================== */
-    var navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+    var allNavLinks = document.querySelectorAll('.navbar-nav .nav-link');
     var navbarCollapse = document.querySelector('.navbar-collapse');
-    if (navbarCollapse && navLinks.length > 0) {
+    if (navbarCollapse && allNavLinks.length > 0) {
         var bsCollapse = new bootstrap.Collapse(navbarCollapse, { toggle: false });
-        navLinks.forEach(function(link) {
+        allNavLinks.forEach(function(link) {
             link.addEventListener('click', function() {
                 // Check if the navbar is in mobile view (collapsed)
                 if (navbarCollapse.classList.contains('show')) {
