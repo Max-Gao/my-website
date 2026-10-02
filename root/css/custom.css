@@ -79,6 +79,10 @@
   font-weight: 700;
 }
 
+.navbar .navbar-toggler:focus:not(:focus-visible) {
+  box-shadow: none;
+}
+
 /* === 语言选择器优化 === */
 .language-selector-wrapper {
   display: flex;
